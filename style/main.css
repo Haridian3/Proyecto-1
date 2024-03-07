@@ -1,0 +1,12 @@
+
+/* prueba h1 tienda */
+h1 {
+    color: blueviolet;   
+}
+
+/* prueba container tienda */
+.container {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(241, 240, 248);
+}
