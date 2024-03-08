@@ -1,0 +1,67 @@
+#title {
+    display: flex;
+    
+
+}
+h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #f3490b;
+    background-color: white;
+}
+
+body {
+   
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .contenedor {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: stretch;
+   
+    gap: 5px; /* Añade espacio entre los boxes */
+  }
+  
+  .box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px); /* Ajusta el ancho de cada box para que entren tres en una fila, considerando el gap */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .box button {
+    background-color: #f3490b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: auto; /* Alinea el botón al final del contenedor .box */
+  }
+  
+  .box button:hover {
+    background-color: white;
+    color: #f3490b;
+  }
+  

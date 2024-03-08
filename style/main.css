@@ -1,8 +1,54 @@
 
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(251, 251, 251);
+    background-color:#f3490b;
+   
+
+  }
+  
 /* prueba h1 tienda */
-h1 {
-    color: blueviolet;   
+
+nav {
+    position:sticky;
+    top: 0;
+    
+    background-color: #ffffff; /* Color de fondo de la barra de menú */
+    width: 100%; /* Ancho de la barra de menú */
+    z-index: 999; /* Asegurar que la barra de navegación esté en la parte superior */
 }
+
+ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 20px;
+    overflow: hidden; /* Evita que los elementos se desborden */
+
+}
+
+li {
+    float: right; /* Alinea los elementos de menú horizontalmente */
+}
+
+li a {
+    display: block;
+    color: #f3490b; /* Color del texto del menú */
+    text-align: center;
+    padding: 14px 16px; /* Espacio entre los elementos de menú */
+    text-decoration: none; /*Quita la subrayado de los enlaces */
+    font-family:'Montserrat', sans-serif;
+}
+
+li a:hover {
+    background-color: #f3490b; /* Cambia el color de fondo cuando se pasa el cursor sobre un elemento */
+    color: white;
+}
+
+
 
 /* prueba container tienda */
 .container {
