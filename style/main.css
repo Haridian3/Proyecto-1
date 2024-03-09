@@ -1,0 +1,31 @@
+nav {
+    position:sticky;
+    background-color: #ffffff; 
+    width: 100%; 
+    z-index: 999; 
+}
+
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 20px;
+    overflow: hidden; 
+
+}
+
+li {
+    float: right; 
+}
+
+li a {
+    display: block;
+    color: #f3490b; 
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none; 
+    font-family:'Montserrat', sans-serif;
+}
+li a:hover {
+    background-color: #f3490b; 
+    color: white;
+}
