@@ -3,9 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Servicios</title>
 </head>
 <body>
+
+    <video id="video-background" autoplay muted loop style="min-width: 10%; min-height: 10%;">
+        <source src="Video/1710011085901205.mov" type="video/mp4">
+    </video>
+
+    <div class="background"></div>
+
+    <div class="overlay"></div>
+
+
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>   
+
+
+    <div class="container-1">
+        <div class="logo-container">
+            <img src="imagenes/logon2.png" alt="Logo" class="animated-logo">
+        </div>
+        <div class="content">
+            <h1>SHOP</h1>
+            <p>Bienvenido a nuestro sitio web. Somos la mejor opción para comprar</p>
+            <P>y hacer negocios con gente de tu ciudad, conectate ya!!!</P>
+            <h1>SERVICE</h1>
+            <p>Bienvenido a nuestro sitio web. Somos la mejor opción para comprar</p>
+            <P>y hacer negocios con gente de tu ciudad, conectate ya!!!</P>
+            <p>Bienvenido a nuestro sitio web. Somos la mejor opción para comprar</p>
+        </div>
+    </div>
+
+
+    <div class="botones">
+        <button class="boton">SHOP NOW</button>
+        <button class="boton">ATENCIÓN</button>
+        <button class="boton">SERVICIOS</button>
+    </div>
+
+    <div class="container-2">
+        <p>SHOP AND SERVICE</p>
+    </div>
+
+
+
+    <section class="white-section">
+
+        <h1>SERVICIOS PERSONALIZADOS</h1>
+        <P>Nuestros servicios son de calidad, con profesionales altamente cualificados.</P>
+        <div class="image-container">
+            <img class="image1" src="imagenes/53v2.jpg" alt="Imagen 1">
+            <img class="image2" src="imagenes/ilustracion-plana-semana-servicio-al-cliente_23-2149644201.avif" alt="Imagen 2">
+            <img class="image3" src="imagenes/mujer-sonriente-trabajadora-construccion-casco-blanco-chaleco-naranja-ingeniero-ilustracion-plana-vectorial_531064-1713.avif" alt="Imagen 3">
+        </div>
+        
+        
+        <div class="button-container">
+            <button class="boton">MARKETING</button>
+            <button class="boton">DISEÑO IA</button>
+            <button class="boton">POSICIONAR</button>
+        </div>
+
+
+    </section>
+
+    <section class="dual-color-section">
+        <div class="left-part">
+            <h2>ABOUT US</h2>
+            <p>Somos alumnos de Reboot Academy dispuestos a aprender una nueva habilidad para formar parte del Mercado tecnológico, esta es una experiencia nueva y enriquecedora.</p>
+            <p>Estamos tratando de aprender y aplicar todo lo aprendido en este Bootcamp, las disciplinas que se exigen son duras, y a veces también abrumadoras, al inicio muchos de los alumnos nos hemos sentido aturdidos pero aquí estamos, realizando una página web con HTML y CSS por primera vez.</p>
+            <h2>OUR TEAM</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="imagenes/istockphoto-450100369-612x612.jpg" alt="Miembro del equipo 1">
+                    <h3>Roberta L. Ventas </h3>
+                   
+                </div>
+                <div class="team-member">
+                    <img src="imagenes/istockphoto-521824455-612x612.jpg" alt="Miembro del equipo 2">
+                    <h3>Patricia B. Marketing</h3>
+                    
+                </div>
+                <div class="team-member">
+                    <img src="imagenes/istockphoto-615279718-612x612.jpg" alt="Miembro del equipo 3">
+                    <h3>Maria H. Diseñadora</h3>
+                    
+                </div>
+            </div>
+        </div>
     
+        <div class="right-part">
+            <img src="imagenes/weare t.png" alt="Imagen 1" class="animated-image">
+            <img src="imagenes/WE CAN.png" alt="Imagen 2" class="animated-image">
+            <img src="imagenes/WE LEARN.png" alt="Imagen 3" class="animated-image">
+            <img src="imagenes/WE MAKE.png" alt="Imagen 4" class="animated-image">
+        </div>
+
+        <script>
+            const images = document.querySelectorAll('.right-part img.animated-image');
+            let currentIndex = 0;
+        
+            function fadeInNextImage() {
+                images[currentIndex].style.opacity = '0'; // Oculta la imagen actual
+                currentIndex = (currentIndex + 1) % images.length; // Cambia al siguiente índice de imagen
+                images[currentIndex].style.opacity = '1'; // Muestra la siguiente imagen
+            }
+        
+            // Oculta todas las imágenes excepto la primera al principio
+            for (let i = 1; i < images.length; i++) {
+                images[i].style.opacity = '0';
+            }
+        
+            setInterval(fadeInNextImage, 3000); // Cambia cada 3 segundos (3000 milisegundos)
+
+        </script>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imagenes/logon.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Atencion al cliente</a></li>
+                    <li><a href="#">Departamento de ventas</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Diseño Web</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Contacto:</p>
+                <p>Email: ejemplo@tudominio.com</p>
+                <p>Teléfono: 123-456-7890</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-contact2">
+                <p>Síguenos en nuestras redes.</p>
+                <p>Comparte tus inquietudes.</p>
+                <p>Dinos que te gusta!.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
 </body>
 </html>
