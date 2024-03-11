@@ -1,17 +1,53 @@
 #title {
-    display: flex;
-    
+  
+  
+  
+}
+
+#selector-categoria {
+  
+  
+
 
 }
+
 h1 {
     padding-left: 20px;
     padding-right: 20px;
 }
+.categoria h2 {
 
-h2 {
+  font-family: 'Montserrat', sans-serif;
+    color: #f3490b;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+   justify-content: center;
+   
+    border: orange;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 10px;
+    
+    
+}
+
+.producto h3 {
     font-family: 'Montserrat', sans-serif;
     color: #f3490b;
     background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    
+   
+    border: orange;
+    border-style: solid;
+
+    
+    
 }
 
 body {
@@ -20,38 +56,58 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f4f4f4;
-    margin: 0;
+    margin: 5px 20px 5px 20px;
     padding: 20px;
     box-sizing: border-box;
   }
   
-  .contenedor {
+  .contenedor-categorias {
     display: flex;
+    gap: 10px;
     /* justify-content: space-between; */
-    align-items: stretch;
-   
-    gap: 5px; /* Añade espacio entre los boxes */
+
   }
-  
-  .box {
+  .categoria {
+    flex: 1; /* Permite que cada categoría se expanda para ocupar el espacio disponible */
+  min-width: 30%; /* Establece un mínimo de ancho para cada categoría */
+  }
+
+  .productos {
+    
+    display: flex;
+    flex-direction: column; /
+    
+    
+  }
+  .producto {
     background-color: white;
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: calc(33.333% - 20px); /* Ajusta el ancho de cada box para que entren tres en una fila, considerando el gap */
-    display: flex;
+     /* Ajusta el ancho de cada box para que entren tres en una fila, considerando el gap */
+    display:flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
+    box-sizing: border-box;
+
+    
   }
+ 
+
+  /* Ajuste para el último producto de cada fila para evitar el margen derecho */
+.producto:nth-child(3n) {
+  margin-right: 0;
+}
   
-  .box img {
+  .producto img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
   }
   
-  .box button {
+  .producto button {
     background-color: #f3490b;
     color: white;
     border: none;
@@ -60,8 +116,53 @@ body {
     margin-top: auto; /* Alinea el botón al final del contenedor .box */
   }
   
-  .box button:hover {
+  .producto button:hover {
     background-color: white;
     color: #f3490b;
   }
   
+  .producto select, .producto input[type="number"] {
+    width: 50px;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .input-producto {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el contenedor */
+    gap: 10px; /* Espacio entre la etiqueta y el campo de entrada */
+  }
+  
+  label {
+    margin-bottom: 0; /* Asegura que no haya margen extra debajo de la etiqueta */
+  }
+  
+  input[type="number"] {
+    width: 10px; /* Permite que el campo de entrada ajuste su tamaño automáticamente */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  #filtro-categoria {
+    padding: 10px;
+    background-color: #f3490b;
+    font-family:'Montserrat', sans-serif;
+    color: #f4f4f4;
+    margin-bottom: 20px; /* Espacio entre el filtro y los productos */
+    width: 200px; /* Ancho fijo para el selector */
+    border-radius: 5px; /* Bordes redondeados para un aspecto más moderno */
+    border: 1px solid #ddd; /* Borde sutil */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    cursor: pointer; /* Indica que el elemento es interactivo */
+  }
+  label {
+    display: block;
+    margin-bottom: 8px; /* Espacio entre la etiqueta y el select */
+    font-weight: bold;
+    color: #333; /* Color del texto */
+  }
+

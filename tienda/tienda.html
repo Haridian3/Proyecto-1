@@ -1,53 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <script src="/src/script.js"></script>
-    <link rel="stylesheet" href="/style/main.css">
-    <link rel="stylesheet" href="/style/tienda.css">
+  <script src="/src/script.js"></script>
+  <script src="/src/tienda.js"></script>
+  <link rel="stylesheet" href="/style/main.css">
+  <link rel="stylesheet" href="/style/tienda.css">
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <div id="title">
-        <h1>Tienda Online</h1>
-    </div>
-    <div class="contenedor">
-        <div class="box">
-          <img src="/assets/jarra-plastico-naranja-naranja.jpg" alt="Descripción de la imagen 1">
-          <h2>Jarra Naranja</h2>
-          <p>Jarra de plástico de color naranja, para todo tipo de bebidas frías y calientes.</p>
-          <button>Añadir al carrito</button>
-        </div>
-        <div class="box">
-          <img src="/assets/sombrero-premium-naranja-naranja.jpg" alt="Descripción de la imagen 2">
-          <h2>Sombrero Naranja</h2>
-          <p>Sombrero con estilo y materiales ecologicos ideal para días soleados .</p>
-          <button>Añadir al carrito</button>
-        </div>
-        <div class="box">
-          <img src="/assets/taza-kulmer-naranja.jpg" alt="Descripción de la imagen 3">
-          <h2>Taza Naranja</h2>
-          <p>Taza de cerámica de color naranja ideal para un desayuno o una merienda.</p>
-          <button>Añadir al carrito</button>
-        </div>
-      </div>      
-    
-    
 
-    
-    
+<body>
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Tienda</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <div id="title">
+    <h1>Tienda Online</h1>
+  </div>
+
+  <!-- Selector de Categoría -->
+  <div id="selector-categoria">
+    <label for="filtro-categoria">Seleccione la categoría:</label>
+      <select id="filtro-categoria">
+        <option value="todos">Todos</option>
+        <option value="jarras">Jarras</option>
+        <option value="sombreros">Sombreros</option>
+        <option value="tazas">Tazas</option>
+      </select>
+  </div>
+<!-- Contenedores de Productos por Categoría -->
+<div class="contenedor-categorias">
+  <div class="categoria" data-categoria="jarras">
+    <!-- Productos de Jarras aquí -->
+  </div>
+  <div class="categoria" data-categoria="sombreros">
+    <!-- Productos de Sombreros aquí -->
+  </div>
+  <div class="categoria" data-categoria="tazas">
+    <!-- Productos de Tazas aquí -->
+  </div>
+</div>
+
+
+  <div class="contenedor-categorias">
+    <!-- Categoría Jarras -->
+    <div class="categoria">
+      <h2>Jarras</h2>
+      <div class="productos">
+        <!-- Producto 1 -->
+        <div class="producto">
+          <img src="/assets/jarra-plastico-naranja-naranja.jpg" alt="Descripción de la imagen 1">
+          <h3>Jarra WX</h3>
+          <p>Jarra de plástico de color naranja, para todo tipo de bebidas frías y calientes.</p>
+          <div class="input-producto">
+            <label for="cantidad-jarra">Cantidad:</label>
+            <input type="number" id="cantidad-jarra" name="cantidad-jarra" min="1" value="1">
+            </div>
+          <button>Añadir al carrito</button>
+        </div> <!-- producto 1-->
+      </div>
+    </div>
+       
+                        <!-- Categoría Sombreros -->
+       <div class="categoria">
+        <h2>Sombreros</h2>
+          <div class="productos"> 
+                  <!-- Producto 1 -->
+                  <div class="producto">
+            <img src="/assets/sombrero-premium-naranja-naranja.jpg" alt="Sombrero Naranja">
+            <h3>Sombrero WX</h3>
+              <p>Sombrero con estilo y materiales ecologicos ideal para días soleados.</p>
+                  <div class="input-producto">
+                  <label for="cantidad-sombrero">Cantidad:</label>
+                     <input type="number" id="cantidad-sombrero" name="cantidad-sombrero" min="1" value="1">
+                      </div>
+            <button>Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+       <!-- Categoría Tazas -->
+       <div class="categoria">
+        <h2>Tazas</h2>
+          <div class="productos">
+            <!-- Producto 1 -->
+            <div  class="producto">
+            <img src="/assets/taza-kulmer-naranja.jpg" alt="Taza Kulmer Naranja">
+            <h3>Taza WX</h3>
+            <p>Taza de cerámica de color naranja ideal para un desayuno o una merienda.</p>
+            <div class="input-producto">
+              <label for="cantidad-taza">Cantidad:</label>
+                <input type="number" id="cantidad-taza" name="cantidad-taza" min="1" value="1">
+             </div>
+             <button>Añadir al carrito</button>
+          </div>
+        </div>
+      </div> <!-- productos-->
+    </div> <!-- categoria-->
+   <!-- contenedor categorias-->
+
+
+   <footer>
+    <ul>
+      <li><a href="https://twitter.com/tuUsuario" target="_blank">
+        <i class="fab fa-twitter-square"></i>
+      </a></li>
+      <li><a href="https://www.instagram.com/tuUsuario" target="_blank">
+        <i class="fab fa-instagram-square"></i>
+      </a></li>
+      <li><a href="https://www.linkedin.com/in/tuUsuario" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a></li>
+      <li><a href="https://www.facebook.com/tuUsuario" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+      </a></li>
+      <li><a href="#">Tu Tienda online ©2024</a></li>
+    </ul>
+
+   
+
+  </footer>
+
+
 </body>
+
 </html>
