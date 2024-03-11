@@ -17,13 +17,21 @@
 <body>
   <nav>
     <ul>
-      <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Acerca de</a></li>
-      <li><a href="#">Tienda</a></li>
-      <li><a href="#">Contacto</a></li>
+        <li class="cart-item cart-dropdown">
+          <a href="javascript:void(0)">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count" class="cart-count">0</span>
+             </a>
+          <div class="dropdown-content" id="dropdown-carrito">
+         </div>
+        </li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
     </ul>
-  </nav>
+    
+</nav>
   
   <div id="title">
     <h1>Tienda Online</h1>
@@ -52,6 +60,9 @@
   </div>
 </div>
 
+<div id="sidebar">
+ <h3>Carrito de la compra</h3>
+</div>
 
   <div class="contenedor-categorias">
     <!-- Categoría Jarras -->
@@ -63,6 +74,10 @@
           <img src="/assets/jarra-plastico-naranja-naranja.jpg" alt="Descripción de la imagen 1">
           <h3>Jarra WX</h3>
           <p>Jarra de plástico de color naranja, para todo tipo de bebidas frías y calientes.</p>
+          <div class="precio-producto"> <!-- Precio Producto -->
+            <label for="precio-jarra">Precio:</label>
+            <span id="precio-jarra">19.99€</span>
+          </div>
           <div class="input-producto">
             <label for="cantidad-jarra">Cantidad:</label>
             <input type="number" id="cantidad-jarra" name="cantidad-jarra" min="1" value="1">
@@ -81,7 +96,13 @@
             <img src="/assets/sombrero-premium-naranja-naranja.jpg" alt="Sombrero Naranja">
             <h3>Sombrero WX</h3>
               <p>Sombrero con estilo y materiales ecologicos ideal para días soleados.</p>
+              <div class="precio-producto"> <!-- Precio Producto -->
+                <label for="precio-jarra">Precio:</label>
+                <span id="precio-jarra">8.99€</span>
+              </div>
+              
                   <div class="input-producto">
+                  <label ></label>
                   <label for="cantidad-sombrero">Cantidad:</label>
                      <input type="number" id="cantidad-sombrero" name="cantidad-sombrero" min="1" value="1">
                       </div>
@@ -98,6 +119,10 @@
             <img src="/assets/taza-kulmer-naranja.jpg" alt="Taza Kulmer Naranja">
             <h3>Taza WX</h3>
             <p>Taza de cerámica de color naranja ideal para un desayuno o una merienda.</p>
+            <div class="precio-producto"> <!-- Precio Producto -->
+              <label for="precio-jarra">Precio:</label>
+              <span id="precio-jarra">9.99€</span>
+            </div>
             <div class="input-producto">
               <label for="cantidad-taza">Cantidad:</label>
                 <input type="number" id="cantidad-taza" name="cantidad-taza" min="1" value="1">

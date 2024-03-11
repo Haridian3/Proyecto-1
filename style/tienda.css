@@ -166,3 +166,96 @@ body {
     color: #333; /* Color del texto */
   }
 
+/* footer */
+
+footer {
+  position:sticky;
+  top: 100%;
+  
+  background-color: #f3490b; /* Color de fondo de la barra de menú */
+  width: 100%; /* Ancho de la barra de menú */
+  padding: 10px 0;
+}
+
+footer ul {
+  list-style-type: none; /* Quita los puntos de la lista */
+  margin: 0;
+  padding: 20px;
+  overflow: hidden; /* Evita que los elementos se desborden */
+
+}
+
+footer li {
+  float: right; /* Alinea los elementos de menú horizontalmente */
+}
+
+footer li a {
+  display: block;
+  color: #ffffff; /* Color del texto del menú */
+  text-align: center;
+  padding: 14px 16px; /* Espacio entre los elementos de menú */
+  text-decoration: none; /*Quita la subrayado de los enlaces */
+  font-family:'Montserrat', sans-serif;
+}
+
+footer li a:hover {
+  background-color: #f3490b; /* Cambia el color de fondo cuando se pasa el cursor sobre un elemento */
+  color: white;
+}
+
+.fa-facebook-square, .fa-twitter-square, .fa-instagram-square, .fa-linkedin {
+  font-size: 48px; /* Cambia el tamaño del icono */
+  color: #ffffff; /* Cambia el color del icono */
+  margin-right: 10px; /* Añade espacio a la derecha del icono */
+}
+
+a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+#sidebar {
+  display: flex;
+}
+
+
+/* Estilos para el contenedor del desplegable */
+.cart-dropdown {
+    position: relative;
+}
+
+/* Estilos para el contenido del desplegable */
+.dropdown-content {
+  display: none;
+  position: sticky;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding: 10px;
+}
+
+/* Mostrar el contenido del desplegable cuando se pasa el ratón */
+.cart-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.show-dropdown {
+  display: block;
+}
+/* CSS carrito */
+
+.carrito-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.carrito-item button {
+  margin: 0 5px;
+}
+
+
+
+
