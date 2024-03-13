@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/landing.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="src/script.js"></script>
     <title>Servicios</title>
 </head>
 <body>
 
     <video id="video-background" autoplay muted loop style="min-width: 10%; min-height: 10%;">
-        <source src="Video/1710011085901205.mov" type="video/mp4">
+        <source src="assets/Video/1710011085901205.mov" type="video/mp4">
     </video>
 
     <div class="background"></div>
@@ -21,18 +22,22 @@
 
     <nav>
         <ul>
-            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="cart-dropdown">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <div class="dropdown-content">
+                    <!-- Aquí se mostrarán los productos seleccionados -->
+                </div>
+            </li> 
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Acerca de</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
-    </nav>   
-
+    </nav>
 
     <div class="container-1">
         <div class="logo-container">
-            <img src="imagenes/logon2.png" alt="Logo" class="animated-logo">
+            <img src="assets/imagenes/logon2.png" alt="Logo" class="animated-logo">
         </div>
         <div class="content">
             <h1>SHOP</h1>
@@ -63,9 +68,9 @@
         <h1>SERVICIOS PERSONALIZADOS</h1>
         <P>Nuestros servicios son de calidad, con profesionales altamente cualificados.</P>
         <div class="image-container">
-            <img class="image1" src="imagenes/53v2.jpg" alt="Imagen 1">
-            <img class="image2" src="imagenes/ilustracion-plana-semana-servicio-al-cliente_23-2149644201.avif" alt="Imagen 2">
-            <img class="image3" src="imagenes/mujer-sonriente-trabajadora-construccion-casco-blanco-chaleco-naranja-ingeniero-ilustracion-plana-vectorial_531064-1713.avif" alt="Imagen 3">
+            <img class="image1" src="assets/imagenes/Marketing.png" alt="Imagen 1">
+            <img class="image2" src="assets/imagenes/DISEÑO IA.png" alt="Imagen 2">
+            <img class="image3" src="assets/imagenes/posicionar.png" alt="Imagen 3">
         </div>
         
         
@@ -86,17 +91,17 @@
             <h2>OUR TEAM</h2>
             <div class="team-members">
                 <div class="team-member">
-                    <img src="imagenes/istockphoto-450100369-612x612.jpg" alt="Miembro del equipo 1">
+                    <img src="assets/imagenes/istockphoto-450100369-612x612.jpg" alt="Miembro del equipo 1">
                     <h3>Roberta L. Ventas </h3>
                    
                 </div>
                 <div class="team-member">
-                    <img src="imagenes/istockphoto-521824455-612x612.jpg" alt="Miembro del equipo 2">
+                    <img src="assets/imagenes/istockphoto-521824455-612x612.jpg" alt="Miembro del equipo 2">
                     <h3>Patricia B. Marketing</h3>
                     
                 </div>
                 <div class="team-member">
-                    <img src="imagenes/istockphoto-615279718-612x612.jpg" alt="Miembro del equipo 3">
+                    <img src="assets/imagenes/istockphoto-615279718-612x612.jpg" alt="Miembro del equipo 3">
                     <h3>Maria H. Diseñadora</h3>
                     
                 </div>
@@ -104,10 +109,10 @@
         </div>
     
         <div class="right-part">
-            <img src="imagenes/weare t.png" alt="Imagen 1" class="animated-image">
-            <img src="imagenes/WE CAN.png" alt="Imagen 2" class="animated-image">
-            <img src="imagenes/WE LEARN.png" alt="Imagen 3" class="animated-image">
-            <img src="imagenes/WE MAKE.png" alt="Imagen 4" class="animated-image">
+            <img src="assets/imagenes/weare t.png" alt="Imagen 1" class="animated-image">
+            <img src="assets/imagenes/WE CAN.png" alt="Imagen 2" class="animated-image">
+            <img src="assets/imagenes/WE LEARN.png" alt="Imagen 3" class="animated-image">
+            <img src="assets/imagenes/WE MAKE.png" alt="Imagen 4" class="animated-image">
         </div>
 
         <script>
@@ -134,7 +139,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="imagenes/logon.png" alt="Logo">
+                <img src="assets/imagenes/logon.png" alt="Logo">
             </div>
             <div class="footer-links">
                 <ul>
