@@ -13,6 +13,12 @@ function agregarAlCarrito(producto) {
 function actualizarCarrito() {
   const dropdownCarrito = document.getElementById('dropdown-carrito');
   dropdownCarrito.innerHTML = ''; // Limpiar el contenido actual del dropdown del carrito
+// Añade o quita la clase 'is-empty'
+  if (carrito.length > 0) {
+    dropdownCarrito.parentElement.classList.remove('is-empty');
+  } else {
+    dropdownCarrito.parentElement.classList.add('is-empty');
+  }
 
   let totalItems = 0;
   let total = 0;

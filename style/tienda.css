@@ -226,6 +226,7 @@ a {
 
 /* Estilos para el contenido del desplegable */
 .dropdown-content {
+  display: none;
   position: fixed;
   right: 50px;
   top: 60px; /* Ajusta según tu layout */
@@ -238,11 +239,13 @@ a {
   box-sizing: border-box;
   width: 50%;
 }
-
-/* Mostrar el contenido del desplegable cuando se pasa el ratón */
-.cart-dropdown:hover .dropdown-content {
+.show-dropdown {
   display: block;
 }
+/* Mostrar el contenido del desplegable cuando se pasa el ratón */
+/* .cart-dropdown:hover .dropdown-content {
+  display: block;
+} */
 
 .show-dropdown {
   display: block;
@@ -314,6 +317,11 @@ a {
 .dropdown-content button:hover {
   opacity: 0.8;
 }
+
+.is-empty .dropdown-content {
+  display: none !important; /* Usa !important para sobreescribir otras reglas de display */
+}
+
 
 .boton-comprar {
   
