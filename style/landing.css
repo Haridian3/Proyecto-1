@@ -314,11 +314,12 @@ p {
 
 
 .logo-container {
-    position: absolute;
+    position: relative;
     top: 30px;
-    left: 26%;
+    left: 850px;
     transform: translateX(-50%);
     z-index: 1;
+    
 }
 
 .logo-container img {

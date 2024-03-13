@@ -75,3 +75,91 @@
     background-color: #f3490b;
     color: white
 }
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear contenido a la izquierda */
+   
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear contenido a la izquierda */
+    margin-bottom: 20px; /* Espacio entre elementos */
+}
+
+.footer-logo img {
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 57px;
+    margin-top: -80px;
+ 
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    margin-left: 70px;
+   
+}
+
+.footer-contact{
+    margin-top: -20px;
+}
+
+.footer-contact2 p{
+    margin-top: -20px;
+    margin: 5px 0;
+    margin-left: 70px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction:none;
+    margin-left: 62px;
+    margin-top: 30px;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 50px;
+    
+}
+
+.footer-social a:not(:last-child) {
+    margin-right: 20px; /* Añadir margen derecho solo a los elementos excepto al último */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 120px;
+    padding-bottom: 10px;
+    
+}
