@@ -79,7 +79,7 @@ p {
     position:relative; /* Posicionamiento absoluto */
     bottom:-40px; /* Alineación con el borde inferior */
     left: 79px; /* Alineación con el borde izquierdo */
-  
+   
 }
 
 /* Estilos para los botones */
@@ -90,10 +90,11 @@ p {
     padding: 10px 30px;
     margin: 0 20px;
     background-color: transparent; /* Fondo transparente */
-    color: #fff; /* Color del texto */
+    color: #f3490b; /* Color del texto */
     border: 2px solid #000000; /* Borde blanco */
     border-radius: 5px;
     cursor: pointer;
+    
     
 }
 

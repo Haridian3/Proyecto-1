@@ -1,5 +1,5 @@
 
-  body {
+body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -15,7 +15,9 @@
 
 .contacto {
     width: 400px;
-    margin: 50px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
     background-color: #ffffffbb;
     padding: 20px;
     border-radius: 10px;
@@ -26,7 +28,10 @@
 
 .titulo {
     text-align: center;
-    color: #333;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
 }
 
 .descripcion {
@@ -91,12 +96,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Alinear contenido a la izquierda */
-    margin-bottom: 20px; /* Espacio entre elementos */
+    margin-bottom: -20px;
+    margin-top: 10%; /* Espacio entre elementos */
 }
 
-.footer-logo img {
+.footer-logo {
     width: 400px;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
+    margin-top: -1%;
     padding: 50px;
 }
 
@@ -105,7 +112,7 @@
     padding: 0;
     margin: 0;
     margin-left: 57px;
-    margin-top: -80px;
+    margin-top: -50px;
  
 }
 
@@ -118,8 +125,13 @@
 }
 
 .footer-links ul li a {
-    color: #fff;
+    color: #f65920;
     text-decoration: none;
+}
+
+.footer-links ul li a:hover{
+background-color: #f65920;
+color: white;
 }
 
 .footer-contact p {
@@ -129,7 +141,7 @@
 }
 
 .footer-contact{
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 .footer-contact2 p{
@@ -146,7 +158,7 @@
 }
 
 .footer-social a {
-    color: #fff;
+    color: #f65920;
     text-decoration: none;
     margin-bottom: 15px;
     font-size: 50px;
@@ -163,3 +175,4 @@
     padding-bottom: 10px;
     
 }
+
